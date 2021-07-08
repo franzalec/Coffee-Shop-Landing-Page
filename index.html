@@ -11,6 +11,7 @@
 </head>
 <body>
     <section>
+        <div class="circle"></div>
         <header>
             <a href="#"><img src="/image/logo.png"  class="logo"></a>
             <ul>
@@ -26,19 +27,21 @@
                 <p>There’s nothing quite like that first cup of coffee in the A.M. A few <br>
                     sips of the aromatic magic stuff later and you're suddenly awake and <br>
                     motivated to tackle your day head on. It's truly the best.</p>
-                <a href="#">Learn More</a>
+                <a href="#" class="button">Learn More</a>
             </div>
 
             <div class="imgBox">
-                <img src="/image/caramel.png" alt="Caramel Latte">
+                <img src="/image/caramel.png" alt="Caramel Latte" class="caramel">
             </div>
         </div>
 
         <ul class="thumb">
-            <li><img src="/image/caramel.png"></li>
-            <li><img src="/image/mocha.png"></li>
-            <li><img src="/image/matcha.png"></li>
+            <li><img src="/image/caramel.png" onclick="imgSlider('/image/caramel.png'); changeCircleColor('#deb887')"></li>
+            <li><img src="/image/mocha.png" onclick="imgSlider('/image/mocha.png'); changeCircleColor('#65350F')"></li>
+            <li><img src="/image/matcha.png" onclick="imgSlider('/image/matcha.png'); changeCircleColor('#1E5631')"></li>
         </ul>
     </section>
+
+    <script type="text/javascript" src="style.js"></script>
 </body>
 </html>
